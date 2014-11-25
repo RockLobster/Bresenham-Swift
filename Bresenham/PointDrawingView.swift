@@ -9,24 +9,17 @@
 import Foundation
 import Cocoa
 
-class BresenhamView : NSView, NSGestureRecognizerDelegate {
+class PointDrawingView : NSView, NSGestureRecognizerDelegate {
     var points:[intPoint] = []
-    let pixelSize:CGFloat = 6
-    var p1:NSPoint!
+    var pixelSize:CGFloat = 3
     
-    func gestureRecognizerShouldBegin(gestureRecognizer: NSGestureRecognizer) -> Bool {
-        p1 = gestureRecognizer.locationInView(self)
-        p1.x /= pixelSize
-        p1.y /= pixelSize
-        return true;
+    func setPoints(pointsToDraw: [intPoint]) {
+        points = pointsToDraw
+        self.needsDisplay = true
     }
     
-    @IBAction func handlePan(recognizer:NSPanGestureRecognizer) {
-        let translation = recognizer.translationInView(self)
-        
-        let p2 = NSPoint(x: (p1.x + translation.x/pixelSize), y: (p1.y + translation.y/pixelSize))
-        
-        points = bresenham(p1, p2)
+    func setPixelSize(newSize: CGFloat) {
+        pixelSize = newSize;
         self.needsDisplay = true
     }
     

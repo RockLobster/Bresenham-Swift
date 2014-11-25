@@ -13,7 +13,7 @@
 		F5BE2B451A1A7E4000313291 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BE2B441A1A7E4000313291 /* Images.xcassets */; };
 		F5BE2B481A1A7E4000313291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BE2B461A1A7E4000313291 /* Main.storyboard */; };
 		F5BE2B541A1A7E4000313291 /* BresenhamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE2B531A1A7E4000313291 /* BresenhamTests.swift */; };
-		F5BE2B5E1A1A7E4F00313291 /* BresenhamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE2B5D1A1A7E4F00313291 /* BresenhamView.swift */; };
+		F5BE2B5E1A1A7E4F00313291 /* PointDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE2B5D1A1A7E4F00313291 /* PointDrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		F5BE2B4D1A1A7E4000313291 /* BresenhamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BresenhamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BE2B521A1A7E4000313291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5BE2B531A1A7E4000313291 /* BresenhamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BresenhamTests.swift; sourceTree = "<group>"; };
-		F5BE2B5D1A1A7E4F00313291 /* BresenhamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BresenhamView.swift; sourceTree = "<group>"; };
+		F5BE2B5D1A1A7E4F00313291 /* PointDrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointDrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				F5BE2B441A1A7E4000313291 /* Images.xcassets */,
 				F5BE2B461A1A7E4000313291 /* Main.storyboard */,
 				F5BE2B3E1A1A7E4000313291 /* Supporting Files */,
-				F5BE2B5D1A1A7E4F00313291 /* BresenhamView.swift */,
+				F5BE2B5D1A1A7E4F00313291 /* PointDrawingView.swift */,
 				F589E7111A24A0D5002C54A1 /* Bresenham.swift */,
 			);
 			path = Bresenham;
@@ -215,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BE2B431A1A7E4000313291 /* ViewController.swift in Sources */,
-				F5BE2B5E1A1A7E4F00313291 /* BresenhamView.swift in Sources */,
+				F5BE2B5E1A1A7E4F00313291 /* PointDrawingView.swift in Sources */,
 				F5BE2B411A1A7E4000313291 /* AppDelegate.swift in Sources */,
 				F589E7121A24A0D5002C54A1 /* Bresenham.swift in Sources */,
 			);
