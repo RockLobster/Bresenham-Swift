@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class BrezenhamView : NSView, NSGestureRecognizerDelegate {
+class BresenhamView : NSView, NSGestureRecognizerDelegate {
     var points:[intPoint] = []
     let pixelSize:CGFloat = 6
     var p1:NSPoint!
